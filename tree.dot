@@ -1,0 +1,13 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="Feature 32 <= 0.905\ngini = 0.695\nsamples = 9\nvalue = [3, 2, 7, 4]\nclass = Parameter Tampering", fillcolor="#cee6f8"] ;
+1 [label="Feature 23 <= -0.655\ngini = 0.627\nsamples = 8\nvalue = [3, 2, 7, 1]\nclass = Parameter Tampering", fillcolor="#b0d8f5"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="gini = 0.0\nsamples = 1\nvalue = [2, 0, 0, 0]\nclass = Anomaly Free", fillcolor="#e58139"] ;
+1 -> 2 ;
+3 [label="gini = 0.545\nsamples = 7\nvalue = [1, 2, 7, 1]\nclass = Parameter Tampering", fillcolor="#91c9f1"] ;
+1 -> 3 ;
+4 [label="gini = 0.0\nsamples = 1\nvalue = [0, 0, 0, 3]\nclass = Sensor Data Manipulation", fillcolor="#d739e5"] ;
+0 -> 4 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+}
