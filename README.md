@@ -29,19 +29,6 @@ git clone https://github.com/yourusername/ENVOT.git
 cd ENVOT
 pip install -r requirements.txt
 ```
-## Usage
-Training and Running the Model
-- **Data Preparation**: Ensure that the dataset is in the appropriate format (e.g., hex to integers for RAM data). The critical 10% of the data is processed during this phase.
-- **Model Training**: Run the script to train the VAE model and the ensemble classifiers (RandomForest and XGBoost).
-```bash
-python train_model.py --dataset path/to/dataset
-```
-- **Anomaly Detection**: After training, you can predict anomalies using the test dataset.
-```bash
-python predict_anomalies.py --model path/to/saved_model --test path/to/test_data
-```
-- **Running Simulation (NS3)**
-To run the NS3 simulation for large-scale IoT devices, follow the instructions provided in the simulation/README.md.
 
 ## Project Structure
 ```bash
