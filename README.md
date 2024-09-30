@@ -20,7 +20,6 @@ NS3 (for simulation environment)
 Pandas
 NumPy
 Matplotlib
-Installation
 ```
 Clone the repository and install the dependencies:
 
