@@ -9,6 +9,12 @@ ENVOT is built to detect anomalies in IoT devices, targeting various types of po
 - Ensemble model with RandomForest and XGBoost for classification.
  -Supports both real-time and simulated environments for anomaly detection.
 - Handles attacks such as firmware logic errors, sensor tampering, and more.
+
+## Dataset
+The performance of ENVOT relies on high-quality data from IoT devices, which includes sensor readings and system metrics. Below, we outline how to use the dataset to train and test the model.
+- The dataset contains raw memory data extracted from IoT devices, along with labels indicating normal and anomalous behavior.
+You can download the dataset used for training and testing the model here: [Dataset Link](https://dx.doi.org/10.21227/hfcg-kj85)
+
 ## Requirements
 The following dependencies are required to run the project:
 ```bash
