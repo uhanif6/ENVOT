@@ -67,6 +67,15 @@ python scripts/predict_anomalies.py --model models/trained_model.pkl --test data
 NS_LOG=IoTSimulation=info ./ns3 run scratch/simulation
 ./NetAnim simulation.xml
 ```
+
+## Key Performance Metrices
+- **Accuracy**: Measures the overall correctness of the model's predictions.
+- **Precision**: Ratio of correctly predicted positives to total predicted positives.
+- **Recall**: Ratio of correctly predicted positives to all actual positives.
+- **F1-Score**: Harmonic mean of precision and recall.
+- **Confusion Matrix**: Provides a detailed breakdown of all categories.
+- **Time Consumption (Latency)**: Time taken for processing each input.
+- **Energy Consumption**: Computational efficiency of the model.
 ## Results
 The results/ folder will contain the confusion matrix, precision-recall metrics, and plots for model evaluation. You can also visualize feature importance using the following command:
 
