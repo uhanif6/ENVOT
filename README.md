@@ -1,4 +1,4 @@
-# ENVOT: Anomaly Detection in IoT Devices Using Ensemble and VAE
+# ENVOT: Anomaly Detection in IoT Devices Using Ensemble classifier and Voting mechanism
 This repository contains the implementation of ENVOT (Ensemble and Variational Autoencoder-based IoT anomaly detection). ENVOT is a framework designed for anomaly detection in IoT devices, using a combination of Variational Autoencoder (VAE) for feature extraction and an ensemble of RandomForest and XGBoost classifiers for anomaly prediction.
 
 ## Introduction
