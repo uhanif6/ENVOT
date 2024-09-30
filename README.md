@@ -15,6 +15,9 @@ The following dependencies are required to run the project:
 Python 3.7+
 TensorFlow
 Scikit-learn
+keras
+imblearn
+mpl_toolkits.mplot3d
 XGBoost
 NS3 (for simulation environment)
 Pandas
