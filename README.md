@@ -63,8 +63,9 @@ python scripts/predict_anomalies.py --model models/trained_model.pkl --test data
 ```
 - **Running NS3 Simulation**:
 ```bash
-cd simulation
-python run_simulation.py
+./ns3 build
+NS_LOG=IoTSimulation=info ./ns3 run scratch/simulation
+./NetAnim simulation.xml
 ```
 ## Results
 The results/ folder will contain the confusion matrix, precision-recall metrics, and plots for model evaluation. You can also visualize feature importance using the following command:
