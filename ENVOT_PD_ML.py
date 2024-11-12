@@ -51,46 +51,9 @@ def extract_features(sequences):
     return np.array(features)
 
 # Define file paths
-train_files = {
-    "Anomaly Free": [
-        "RAM_data/anomaly_free_1.txt",
-        "RAM_data/anomaly_free_2.txt",
-        "RAM_data/anomaly_free_3.txt",
-        "RAM_data/anomaly_free_4.txt"
-    ],
-    "Firmware Logic Error": [
-        "RAM_data/firmware_logic_error_1.txt",
-        "RAM_data/firmware_logic_error_2.txt",
-        "RAM_data/firmware_logic_error_3.txt",
-        "RAM_data/firmware_logic_error_4.txt"
-    ],
-    "Parameter Tampering": [
-        "RAM_data/parameter_tampering_1.txt",
-        "RAM_data/parameter_tampering_2.txt",
-        "RAM_data/parameter_tampering_3.txt",
-        "RAM_data/parameter_tampering_4.txt"
-    ],
-    "Sensor Data Manipulation": [
-        "RAM_data/sensor_data_manipulation_1.txt",
-        "RAM_data/sensor_data_manipulation_2.txt",
-        "RAM_data/sensor_data_manipulation_3.txt",
-        "RAM_data/sensor_data_manipulation_4.txt"
-    ] 
-}
-
+train_files = ["#input files for training, anomaly free, parameter tampering, firmware logic error, and sensor data manipulation"]
 # Updated test_files with only 10 files
-test_files = [
-    "RAM_data/anomaly_free_1.txt",
-    "RAM_data/sensor_data_manipulation_3.txt",
-    "RAM_data/parameter_tampering_1.txt",
-    "RAM_data/anomaly_free_4.txt",
-    "RAM_data/firmware_logic_error_3.txt",
-    "RAM_data/firmware_logic_error_1.txt",
-    "RAM_data/sensor_data_manipulation_2.txt",
-    "RAM_data/anomaly_free_3.txt",
-    "RAM_data/sensor_data_manipulation_1.txt",
-    "RAM_data/parameter_tampering_3.txt"
-]
+test_files = ["#input files for testing, anomaly free, parameter tampering, firmware logic error, and sensor data manipulation"]
 
 # Updated test_labels for 10 files
 test_labels = np.array([0, 3, 2, 0, 1, 1, 3, 0, 3, 2])  # Corresponding labels for test files
